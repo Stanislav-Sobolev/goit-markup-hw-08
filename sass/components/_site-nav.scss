@@ -5,9 +5,17 @@
 }
 
 .all-nav {
-	// display: flex;
-	// width: 100%;
-	display: none;
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		width: 100%;
+	}
+
+	@media screen and (min-width: 1200px) {
+	}
 }
 
 .flex-nav,
@@ -22,22 +30,37 @@
 }
 
 .left-nav-menu {
-	// display: flex;
-	// align-items: center;
-	// margin-left: 93px;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		align-items: center;
+		margin-left: 93px;
+	}
 }
 
 .right-nav {
 	margin-left: auto;
-	// display: flex;
-	// align-items: center;
+
+	@media screen and (min-width: 768px) {
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		align-items: center;
+	}
 }
 
 .menu-item {
 	position: relative;
 
-	&:not(:first-child) {
-		// margin-left: 50px;
+	@media screen and (min-width: 768px) {
+		&:not(:first-child) {
+			margin-left: 50px;
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
 	}
 }
 
@@ -75,14 +98,12 @@
 }
 
 .contact-content__icon {
-	// margin-right: 10px;
+	margin-right: 10px;
 
 	fill: currentColor;
 }
 
 .contact-content {
-	padding: 32px 0;
-
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 1.14;
@@ -92,6 +113,14 @@
 	align-items: center;
 
 	transition: color var(--animation-duration) var(--timing-function);
+
+	@media screen and (min-width: 768px) {
+		padding-bottom: 10px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding: 32px 0;
+	}
 }
 
 .contact-content:hover,
@@ -101,26 +130,49 @@
 }
 
 .contact-item:not(:first-child) {
-	// margin-left: 30px;
+	@media screen and (min-width: 1200px) {
+		margin-left: 30px;
+	}
 }
 
-.mob-menu {
+.menu-button {
 	display: inline-flex;
 	margin: 0;
 	padding: 0;
 	border: 0;
 	background-color: transparent;
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
 }
 
-// .mob-menu__icon-close {
-// 	display: none;
-// }
-// .mob-menu__icon-menu {
-// 	display: block;
-// }
-// .mob-menu.is-open .mob-menu__icon-close {
-// 	display: block;
-// }
-// .mob-menu.is-open .mob-menu__icon-menu {
-// 	display: none;
-// }
+.menu-button__icon-close {
+	display: none;
+}
+.menu-button__icon-menu {
+	display: block;
+}
+.menu-button.is-open .menu-button__icon-close {
+	display: block;
+}
+.menu-button.is-open .menu-button__icon-menu {
+	display: none;
+}
+
+.menu-container {
+	position: fixed;
+	left: 0;
+	top: 0;
+
+	width: 100vh;
+	height: 100vw;
+
+	background-color: chartreuse;
+
+	transform: translateX(0);
+}
+
+.menu-container.is-open {
+	transform: translateX(0);
+}
