@@ -1037,6 +1037,7 @@ img {
   transition: -webkit-transform var(--animation-duration) var(--timing-function);
   transition: transform var(--animation-duration) var(--timing-function);
   transition: transform var(--animation-duration) var(--timing-function), -webkit-transform var(--animation-duration) var(--timing-function);
+  max-width: 100%;
   width: 450px;
   height: 609px;
   top: 50%;
