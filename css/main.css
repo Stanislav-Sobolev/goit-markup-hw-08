@@ -2114,7 +2114,7 @@ img {
   color: var(--primary-white-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .works-backdrop__text {
     width: 402px;
   }
