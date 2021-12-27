@@ -40,6 +40,7 @@
 	transform: translateY(0);
 	transition: transform var(--animation-duration) var(--timing-function);
 
+	overflow-y: scroll;
 	top: 100%;
 	left: 0;
 	width: 100%;
@@ -75,8 +76,7 @@
 }
 
 .works-item {
-	margin: 15px;
-
+	margin-bottom: 15px;
 	background-color: var(--primary-white-color);
 
 	@media screen and (min-width: 480px) {
@@ -84,6 +84,7 @@
 	}
 
 	@media screen and (min-width: 768px) {
+		margin: 15px;
 		width: 354px;
 	}
 
@@ -93,9 +94,12 @@
 }
 
 .works-link {
-	display: block;
+	display: flex;
+	flex-direction: column;
+
 	width: 100%;
 	height: 100%;
+
 	transition: box-shadow var(--animation-duration) var(--timing-function);
 
 	&:hover,
@@ -109,6 +113,7 @@
 }
 
 .works-link__bottom {
+	flex-grow: 1;
 	padding: 20px 24px;
 
 	border-right: 1px solid #eeeeee;
