@@ -40,14 +40,12 @@
 	transform: translateY(0);
 	transition: transform var(--animation-duration) var(--timing-function);
 
-	overflow-y: scroll;
+	overflow-y: auto;
 	top: 100%;
 	left: 0;
+
 	width: 100%;
 	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 
 	background-color: rgba(33, 150, 243, 0.9);
 
@@ -58,20 +56,22 @@
 }
 
 .works-backdrop__text {
+	padding: 63px 24px;
+
 	font-size: 18px;
 	line-height: 1.56;
 	color: var(--primary-white-color);
 
-	@media screen and (max-width: 767px) {
-		width: 402px;
+	@media screen and (min-width: 480px) {
+		padding: 77px 24px;
 	}
 
 	@media screen and (min-width: 768px) {
-		width: 306px;
+		padding: 49px 24px;
 	}
 
 	@media screen and (min-width: 1200px) {
-		width: 322px;
+		padding: 63px 24px;
 	}
 }
 
