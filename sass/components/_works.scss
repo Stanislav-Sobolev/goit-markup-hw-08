@@ -1,9 +1,9 @@
 /* -------works------- */
 
 .works-wrap {
-	padding-left: -15px;
-	padding-right: -15px;
-	margin-top: -15px;
+	// padding-left: -15px;
+	// padding-right: -15px;
+	// margin-top: -15px;
 	margin-right: auto;
 	margin-left: auto;
 
@@ -23,6 +23,10 @@
 .works-list {
 	display: flex;
 	flex-wrap: wrap;
+
+	@media screen and (min-width: 768px) {
+		margin: -15px;
+	}
 }
 
 .works-link__backdrop {
@@ -84,11 +88,14 @@
 
 	@media screen and (min-width: 768px) {
 		margin: 15px;
-		width: 354px;
+		// width: 354px;
+		flex-basis: calc((100% - 60px) / 2);
 	}
 
 	@media screen and (min-width: 1200px) {
-		width: 370px;
+		// width: 370px;
+		// width: 350px;
+		flex-basis: calc((100% - 90px) / 3);
 	}
 }
 

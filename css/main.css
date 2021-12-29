@@ -2049,9 +2049,6 @@ img {
 
 /* -------works------- */
 .works-wrap {
-  padding-left: -15px;
-  padding-right: -15px;
-  margin-top: -15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -2080,6 +2077,12 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .works-list {
+    margin: -15px;
+  }
 }
 
 .works-link__backdrop {
@@ -2152,13 +2155,15 @@ img {
 @media screen and (min-width: 768px) {
   .works-item {
     margin: 15px;
-    width: 354px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .works-item {
-    width: 370px;
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
   }
 }
 
