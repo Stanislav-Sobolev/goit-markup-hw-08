@@ -1111,8 +1111,9 @@ img {
   top: 8px;
   cursor: pointer;
   min-width: 30px;
-  width: 30px;
+  max-width: 30px;
   min-height: 30px;
+  max-height: 30px;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
