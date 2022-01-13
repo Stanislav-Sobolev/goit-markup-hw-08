@@ -1106,11 +1106,12 @@ img {
 }
 
 .hero-modal__close-btn {
+  position: absolute;
   right: 8px;
   top: 8px;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1123,7 +1124,6 @@ img {
           justify-content: center;
   background-color: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  outline-color: transparent;
   -webkit-transition: outline-color var(--animation-duration) var(--timing-function);
   transition: outline-color var(--animation-duration) var(--timing-function);
 }
