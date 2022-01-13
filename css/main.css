@@ -1075,8 +1075,7 @@ img {
   transition: -webkit-transform var(--animation-duration) var(--timing-function);
   transition: transform var(--animation-duration) var(--timing-function);
   transition: transform var(--animation-duration) var(--timing-function), -webkit-transform var(--animation-duration) var(--timing-function);
-  max-width: 100%;
-  width: 450px;
+  width: 90%;
   top: 50%;
   left: 50%;
   padding: 40px;
@@ -1090,6 +1089,13 @@ img {
 .hero-backdrop.is-hidden .hero-modal {
   -webkit-transform: scale(0.9) translate(-50%, -50%);
           transform: scale(0.9) translate(-50%, -50%);
+}
+
+@media screen and (min-width: 480px) {
+  .hero-modal {
+    max-width: 100%;
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
