@@ -1134,6 +1134,8 @@ img {
 }
 
 .icon__close {
+  width: 18px;
+  height: 18px;
   fill: #000;
   -webkit-transition: fill var(--animation-duration) var(--timing-function);
   transition: fill var(--animation-duration) var(--timing-function);
