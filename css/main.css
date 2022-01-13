@@ -1124,8 +1124,13 @@ img {
           justify-content: center;
   background-color: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  outline-color: transparent;
   -webkit-transition: outline-color var(--animation-duration) var(--timing-function);
   transition: outline-color var(--animation-duration) var(--timing-function);
+}
+
+.hero-modal__close-btn:hover, .hero-modal__close-btn:focus {
+  outline-color: var(--accent-color);
 }
 
 .icon__close {

@@ -70,14 +70,14 @@
 
 	background-color: var(--primary-white-color);
 	border: 1px solid rgba(0, 0, 0, 0.1);
-	// outline-color: transparent;
+	outline-color: transparent;
 
 	transition: outline-color var(--animation-duration) var(--timing-function);
 
-	// &:hover,
-	// &:focus {
-	// 	outline-color: var(--accent-color);
-	// }
+	&:hover,
+	&:focus {
+		outline-color: var(--accent-color);
+	}
 }
 
 .icon__close {
