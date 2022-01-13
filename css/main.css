@@ -1110,15 +1110,14 @@ img {
   right: 8px;
   top: 8px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-preferred-size: 30px;
       flex-basis: 30px;
   min-height: 30px;
   min-width: 30px;
-  max-width: 30px;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
