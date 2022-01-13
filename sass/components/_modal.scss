@@ -74,10 +74,10 @@
 
 	transition: outline-color var(--animation-duration) var(--timing-function);
 
-	&:hover,
-	&:focus {
-		outline-color: var(--accent-color);
-	}
+	// &:hover,
+	// &:focus {
+	// 	outline-color: var(--accent-color);
+	// }
 }
 
 .icon__close {
