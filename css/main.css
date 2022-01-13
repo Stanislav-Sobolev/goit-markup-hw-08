@@ -1110,10 +1110,11 @@ img {
   right: 8px;
   top: 8px;
   cursor: pointer;
-  min-width: 30px;
-  min-height: 30px;
   -ms-flex-preferred-size: 30px;
       flex-basis: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  min-width: 30px;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
