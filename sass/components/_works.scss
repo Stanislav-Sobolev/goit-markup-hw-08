@@ -31,10 +31,6 @@
 	overflow: hidden;
 }
 
-.works-card__img {
-	display: block;
-}
-
 .works-backdrop {
 	position: absolute;
 
@@ -112,6 +108,7 @@
 }
 
 .works-card__img {
+	display: block;
 	width: 100%;
 }
 

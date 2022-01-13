@@ -1127,14 +1127,14 @@ img {
   outline-color: var(--accent-color);
 }
 
-.icon-x {
+.icon__close {
   fill: #000;
   -webkit-transition: fill var(--animation-duration) var(--timing-function);
   transition: fill var(--animation-duration) var(--timing-function);
 }
 
-.hero-modal__close-btn:hover .icon-x,
-.hero-modal__close-btn:focus .icon-x {
+.hero-modal__close-btn:hover .icon__close,
+.hero-modal__close-btn:focus .icon__close {
   fill: var(--accent-color);
 }
 
@@ -2090,10 +2090,6 @@ img {
   overflow: hidden;
 }
 
-.works-card__img {
-  display: block;
-}
-
 .works-backdrop {
   position: absolute;
   -webkit-transform: translateY(0);
@@ -2189,6 +2185,7 @@ img {
 }
 
 .works-card__img {
+  display: block;
   width: 100%;
 }
 
